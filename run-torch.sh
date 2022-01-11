@@ -1,0 +1,1 @@
+docker run --gpus all -v ~/deepxplore:/workspace 9f34357dd551 python3 $1
