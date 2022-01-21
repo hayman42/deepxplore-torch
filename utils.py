@@ -63,7 +63,7 @@ def update_coverage(coverage_table, output_table, threshold):
     for key in output_table.keys():
         scaled = scale(output_table[key][0])
         if len(scaled.shape) > 1:
-            scaled = scaled.mean(dim=list(range(1,len(scaled.shape))))
+            scaled = scaled.mean(dim=list(range(1, len(scaled.shape))))
         coverage_table[key] |= (scaled > threshold)
 
 

@@ -16,6 +16,7 @@ start_point = (
     random.randint(0, 224-50), random.randint(0, 224-50))
 coverage_history = []
 
+
 def constraint(x): return constraint_black(x)
 def occl(x): return constraint_occl(x, start_point, rect_shape)
 
